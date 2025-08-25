@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "PT Serif", serif;
+    /* text-transform: capitalize; */
+    transition: .2s all linear;
+}
+body{
+    background-image: url(../images/background.jpg);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* #menu-btn{
+    display: none;
+} */
+/* .header{
+    display: flex;
+    background-color: var(--main-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%; 
+    color: var(--black);
+    height: 7rem; */
+    /* background-image: url("../images/background-main.jpg");
+    background-size: cover; */
+    /* position: sticky;
+
+}.header .navbar{
+    font-size: 1.5rem;
+    border-color: rgba(255, 255, 255, 0.2);
+    padding: .8rem;
+    border-radius: .8rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.header  .navbar a{
+    outline: none;
+    color: var(--black);
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 1rem;
+    /* letter-spacing: .05rem; */
+    /* gap: 1rem;  
+} */
+
+.header .navbar a:hover {
+    color: var(--hoover-color);   
+    cursor: pointer;
+}
+.skill img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2); 
+}
+.projects-container img:hover{
+    transform: scale(1.1); 
+}
+
+@media(max-width:768px){
+    
+}
