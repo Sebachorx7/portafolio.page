@@ -1,6 +1,14 @@
 const menuBtn = document.getElementById('menu-btn');
 const header = document.getElementById('header');
 const sidebar = document.getElementById('sidebar');
+const showmorebtn = document.querySelector('#showmore-btn');
+const text = document.querySelector('#readmore-div');
+
+showmorebtn.addEventListener('click', (e)=>{
+  text.classList.toggle('show-more');
+  
+
+})
 
 menuBtn.addEventListener('click', () => {
 

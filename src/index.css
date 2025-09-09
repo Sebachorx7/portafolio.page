@@ -61,6 +61,12 @@ body{
 .projects-container img:hover{
     transform: scale(1.1); 
 }
+#readmore-div{
+    display: none;
+}
+#readmore-div.show-more {
+  display: block;
+}
 
 @media(max-width:768px){
     
