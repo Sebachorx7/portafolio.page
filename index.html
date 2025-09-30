@@ -11,20 +11,21 @@
   <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
   <title >Sebastian Romero Gonzalez - Portfolio</title>
 </head>
-<body class="bg-black">
+<body class="bg-black overflow-x-hidden">
   <div class=" " id="icons">
-      <div id="menu-btn" class=" md:hidden top-2 border-l-0 z-50 fixed cursor-pointer p-2 text-white border-4 border-orange-500 rounded-r-xl" >
+      <div id="menu-btn" class=" md:hidden top-4 border-l-0 z-50 fixed cursor-pointer p-2 text-white border-4 border-orange-500 bg-gray-800 rounded-r-xl" >
         <span class="material-symbols-outlined">menu</span>  
       </div>
     </div>
-  <header class="hidden md:w-48 md:block fixed top-0 left-0 h-screen bg-gray-800/80 text-white p-6 border-r-4 border-orange-500 shadow-lg rounded-r-xl transition-all duration-300" id="header">
+  <header class="md:w-48 md:block fixed top-0 left-0 h-screen bg-gray-800/80 text-white p-6 border-r-4 border-orange-500 shadow-lg rounded-r-xl transition-all duration-300" id="header">
+  <!-- <header class="hidden md:w-48 md:block fixed top-0 left-0 h-screen bg-gray-800/80 text-white p-6 border-r-4 border-orange-500 shadow-lg rounded-r-xl transition-all duration-300" id="header"> -->
     <!-- sidebar -->
     
     <nav class="flex flex-col gap-y-8 mt-10 md:w-48 transition-all duration-300" id="sidebar">
-        <a href="#about-me" class="first-letter:text-orange-500 hover:underline hover:text-orange-500 hover:text-xl text-lg h-8">About me</a>
+        <a href="#about-me" class="first-letter:text-orange-500 hover:underline hover:text-orange-500 hover:text-xl text-lg h-8 mt-4 ">About me</a>
         <a href="#skills" class="first-letter:text-orange-500 hover:underline hover:text-orange-500 hover:text-xl text-lg h-8">Skills</a>
         <a href="#projects" class="first-letter:text-orange-500 hover:underline hover:text-orange-500 hover:text-xl text-lg h-8">Projects</a>
-        <a href="#currently" class="first-letter:text-orange-500 hover:underline hover:text-orange-500 hover:text-xl text-lg h-8">What i'm </br>learning now?</a>
+        <a href="#currently" class="first-letter:text-orange-500 hover:underline hover:text-orange-500 hover:text-xl text-lg h-8">Currently Learning</a>
         <a href="#formation" class="first-letter:text-orange-500 hover:underline hover:text-orange-500 hover:text-xl text-lg h-8">Formation</a>
         <div class="fixed grid grid-cols-2 bottom-24 gap-4">
           <!-- Email, CV, GitHub and LinkedIn -->
@@ -57,23 +58,27 @@
     </nav>
   </header>
   
-  <div class="flex-1 ml-6 md:ml-48 mr-2" id="home">
-    <div class="m-4 sm:m-8 bg-gray-800/80 text-white px-4 sm:px-10 pt-8 sm:pt-14 border-4 border-orange-500 rounded-xl shadow-lg">
+  <div class="mx-4" id="home">
+    <!-- <div class="bg-gray-800/80 text-white px-4 pt-8 border-4 border-orange-500 rounded-xl shadow-lg max-w-full"> -->
+      <!-- Border config -->
+    <div class="md:ml-36 lg:ml-48 bg-gray-800/80 text-white px-4 pt-8 border-4 border-orange-500 rounded-xl shadow-lg max-w-full">
+      
+      
       <!-- About Me -->
-      <section id="about-me" class="container mx-auto p-4 max-w-6xl px-4 scroll-mt-64">
-        <div class="flex flex-wrap gap-x-4 items-center justify-center" >
+      <section id="about-me" class="container mx-auto p-4 max-w-full px-4 scroll-mt-64">
+        <div class="grid md:flex gap-x-4 items-center md:justify-center" >
           <div class="flex justify-center">
             <!-- Profile picture-->
             <img src="./images/profile_photo.jpeg" class="rounded-full w-52 max-w-full h-auto object-contain"/>
           </div>
-          <div class="flex-1 min-w-0 px-4 sm:px-6 lg:px-10">
+          <div class="flex-1 min-w-0 md:px-10 px-4">
             <!-- Name -->
-            <h1 class="font-serif text-2xl text-center md:text-3xl md:text-left lg:text-4xl mb-2">
+            <h1 class="font-serif text-4xl text-center mb-6 md:text-6xl md:text-left lg:text-4xl">
               Sebastian R. Gonzalez
             </h1>
             <!-- Profession -->
             <h2 class="font-semibold text-center text-xl md:text-2xl md:text-left mb-4"  id="name">
-              Junior Frontend & Python Developer
+              Junior Frontend Developer <br> & <br>Python Developer
             </h2>
             <div class="flex flex-wrap items-center justify-center md:justify-start gap-2">
               <!-- Email, CV, GitHub and LinkedIn -->
@@ -97,19 +102,23 @@
             </div>
           </div>
         </div>
+        <hr class="mb-5 mt-5">
         <!-- About me section -->
          <h2 class="text-center font-bold text-3xl mt-4 mb-4 text-white  first-letter:text-5xl first-letter:text-orange-500">
             About me
           </h2>
-        <ul class="list-disc pl-5 marker:text-white space-y-3 text-lg">
-          <li>I am a collaborative, responsible, and honest person who enjoys learning and putting the acquired knowledge into 
-          practice. </br>Currently, I am creating frontend projects with Html, Css, basic Javascript and machine learning applications with Python.</li>
-          <li>I have knowledge in Python automation processes and handling programming languages like JavaScript, PHP, Java, or markup languages like HTML, and 
-            libraries like React, or frameworks like .NET or Tailwind CSS.</li>
-          <li>Experienced in troubleshooting, maintaining, and upgrading hardware systems, including component replacement and performance optimization.</li>
+        <ul class=" pl-5 marker:text-white space-y-3 text-lg md:text-2xl">
+          <li class="md:m-8 md:pt-8"><span class="material-symbols-outlined text-4xl align-middle">hail</span>  I am a collaborative, responsible, and honest person who enjoys learning and putting the acquired knowledge into 
+          practice.</li>
+          <li class="md:m-8 md:pt-8"><span class="material-symbols-outlined text-4xl align-middle">hiking</span>  Currently, I am creating frontend projects with Html, Css, basic Javascript and machine learning applications with Python.</li>
+          <li class="md:m-8 md:pt-8"><span class="material-symbols-outlined text-4xl align-middle">cognition</span> I have knowledge in Python automation processes and handling programming languages like JavaScript, PHP, Java, or markup languages like HTML, and 
+            libraries like React, or frameworks like .NET or Tailwind CSS. </li>
+          <li class="md:m-8 md:pt-8"><span class="material-symbols-outlined text-4xl align-middle">mobile_rotate</span>  Skilled in responsive design, media queries, and mobile-first approach
+          </li>
+          <li class="md:m-8 md:pt-8"><span class="material-symbols-outlined text-4xl align-middle">devices</span>  Experienced in troubleshooting, maintaining, and upgrading hardware systems, including component replacement and performance optimization.</li>
           <!-- <li>I am interested in Machine Learning and processes related to Artificial Intelligence, as it is a technology that will be very important in the coming years 
           and will be implemented across all sectors and companies worldwide.</li> -->
-          <li>Proven ability to collaborate effectively in fast-paced, dynamic environments, with strong analytical skills and a quick learning ability.
+          <li class="md:m-8 md:pt-8"><span class="material-symbols-outlined text-4xl align-middle">groups</span>  Proven ability to collaborate effectively in fast-paced, dynamic environments, with strong analytical skills and a quick learning ability.
           Adept at working both independently and as part of a team to achieve project goals.</li>
         </ul>
       </section>
@@ -122,7 +131,7 @@
         <h1 class="font-bold text-2xl mb-10">
           Soft Skills
         </h1>
-        <div class="mb-6 flex">
+        <div class="mb-6 grid md:flex">
           <ul class="list-disc text-xl pl-16">
             <li>Team Collaboration</li>
             <li>Problem-solving</li>
@@ -184,6 +193,9 @@
         </div>
       </section>
       <hr class="mb-5 mt-5">
+
+
+      
       <!-- Projects -->
       <section id="projects" class="container mx-auto p-4 max-w-6xl px-4 scroll-mt-64">
         <!-- Different projects I did previously, I am updating constantly with new projects. -->
@@ -191,7 +203,7 @@
         <div id="projects-container" class="projects-container">
           
         
-          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 p-4 text-lg">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 text-lg">
             
             
             <!-- Project #5 -->
@@ -199,7 +211,8 @@
                 
               <a href="https://rentalcar-xi.vercel.app/" target = "_blank" >
                 <h3 class="text-2xl mb-2 text-center underline">Rental Cars - Web Site</h3>
-                <div class="relative w-full">
+                
+                <div class="relative w-full pt-6">
                   <img src="./projects/RentalCars.png" class="w-full h-auto rounded shadow"/>
 
                   <!-- ribbon diagonal -->
@@ -207,10 +220,20 @@
                     In Development
                   </div>
                 </div>
+                <div class="grid grid-cols-4 justify-items-center pt-4 pb-4">
+                    <img class="w-8" src="./images/html5.png" alt="">
+                    <img class="w-8" src="./images/css.svg" alt="">
+                    <img class="w-8" src="./images/js.png" alt="">
+                    <img class="w-8" src="./images/tailwind.png" alt="">
+                </div>
                 <p>This is a website designed to build trust and capture the attention of users who want to rent a car. It showcases the available vehicles, provides detailed information about each one, and includes different web pages where users can navigate to explore services and more rental options.</p>
                 <p class="pt-4">This web site is builted with html, css, tailwind and javascript</p></a>
-              </div>
-
+                <div class="flex justify-center" id="readmore-btn">
+                  <button class="bg-orange-500 rounded-xl p-2.5">Read More</button>
+                </div>
+                <hr class="md:hidden mr-16 ml-16 border-orange-500">
+              </div>  
+              
             <!-- Project #6 -->
               <div class="px-3">
               <a href="https://mapleshieldinsurance.wordpress.com/" target = "_blank" >
@@ -223,47 +246,65 @@
                     In Development
                   </div>
                 </div>
-                
+                <div class="grid grid-cols-4 justify-items-center pt-4 pb-4">
+                    <img class="w-8" src="./images/wordpress.png" alt="">                    
+                </div>
                 <p>The website is inspired by a sober and professional design that conveys security to the user. It features different sections organized for greater convenience and ease of use, drawing inspiration from the style often seen in law firms and insurance companies.
                   
                   <p class="pt-4">This website is builted with Wordpress</p></a>
               </div>
-
+              <hr class="md:hidden mr-16 ml-16 border-orange-500">
             <!-- Project #1 -->
             <div class="px-3">
               <a href="https://github.com/Sebachorx7/Assignment3_OOP2" target = "_blank" >
                 <h3 class="text-2xl mb-2 text-center underline">Auto Repair Shop</h3>
                 <img src="./projects/auto_repair_shop.png" class="w-full h-auto rounded shadow py-6"/>
+                <div class="grid grid-cols-4 justify-items-center pt-1 pb-1">
+                    <img class="w-12" src="./images/csharp.png" alt="">
+                </div>
                 <p>This is an App for auto repair shop or mechanic shop who is going to save the information for different users and the servides that they needed.
                   Depending on the number of services the user requires, the value may increase or decrease immediately, and the information is updated and recorded
                   in a database right away.
                   </br> This app was built with C# for an assignment at Durham College.</p></a>
               </div>
+              <hr class="md:hidden mr-16 ml-16 border-orange-500">
             <!-- Project #2 --> 
             <div class="px-3">            
               <a href="https://github.com/Sebachorx7/Assignment4_OOP2" target = "_blank">
                 <h3 class="text-2xl mb-2 text-center underline">Deck of Cards</h3>
+                
                 <img src="./projects/deck_of_cards.png" class="py-6 w-full h-auto rounded shadow"/>
+                <div class="grid grid-cols-4 justify-items-center pt-1 pb-1">
+                    <img class="w-12" src="./images/csharp.png" alt="">                    
+                </div>
                 <p>This is a program who is going to show you a deck of cards, you can add a custom card, deal cards and reset the form if you want to.
                 </br>This app was built with C# for an assignment at Durham College.</p></a>
               </div>
-              <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-4 p-4 text-lg" id="readmore-div">
-              <!-- Project #3 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 text-lg" id="readmore-div">
+              <hr class="md:hidden mr-16 ml-16 border-orange-500 pt-4">
+                <!-- Project #3 -->
               <div class="px-3" >
-                <a href="https://github.com/Sebachorx7/Assignment5_OOP2" target = "_blank">
+                <a class="w-full" href="https://github.com/Sebachorx7/Assignment5_OOP2" target = "_blank">
                   <h3 class="text-2xl mb-2 text-center underline">Durham college Student Registration App</h3>
                   <img src="./projects/dc_student_registrationAssignment5_OOP2.png" class="py-6 w-full h-auto rounded shadow"/>
+                  <div class="grid grid-cols-4 justify-items-center pt-1 pb-1">
+                    <img class="w-12" src="./images/csharp.png" alt="">                    
+                  </div>
                   <p>This application is able to register a new student to Durham College databases.
                     </br> This app was built with C# for an assignment at Durham College.</p></a>
               </div>
+              <hr class="md:hidden mr-16 ml-16 border-orange-500 pt-4">
               <!-- Project #4 -->
               <div class="px-3">
                 <a href="https://github.com/Sebachorx7/Assigment5_WebDevelopEnterprise" target = "_blank">
                   <h3 class="text-2xl mb-2 text-center underline">Login page + Database (Java)</h3>
                   <img src="./projects/login_database.png" class="py-6 w-full h-auto rounded shadow"/>
+                  <div class="grid grid-cols-4 justify-items-center pt-1 pb-1">
+                    <img class="w-8" src="./images/java.png" alt="">                    
+                </div>
                   <p>This application is able to register a new student to Durham College databases.
                         </br> Built in Java</p></a>
-              </div>
+            </div>
           </div>
           </div>
           <div class="flex justify-center" id="showmore-btn">
@@ -276,7 +317,7 @@
       <!-- Currently -->
       <section id="currently" class="container mx-auto p-4 max-w-6xl px-4 scroll-mt-64">
         <h1 class="font-bold text-3xl mb-10 text-center first-letter:text-5xl first-letter:text-orange-500">
-          What I'm Learning Now?
+          Currently Learning
         </h1>
         <!-- <h3 class="mb-4">I've been diving into concepts like supervised // unsupervised learning, decision trees, and neural networks.
           It's still early in the journey, but I'm enjoying this process and understanding how machines can learn from data.</h3>
@@ -305,10 +346,26 @@
           Formation
         </h1>
         
-        <div id="formation-container" class="formation-container">
-          <div class="formation-card flex text-lg">
+        <div id="formation-container" class="formation-container grid">
+          <div class="formation-card mb-10 grid mt-9 text-lg md:flex">
+            <div class="flex items-center gap-x-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+              </svg>          
+              <h3 class="text-l font-bold">
+                Coursera
+              </h3>
+              </div>
+            <ul class="list-disc pl-16 marker:text-white space-y-2" >
+              <li>UI/UX Design Principles Certificate</li>
+              <li>Python for Data Science, AI & Development Certificate</li>
+              <li>Getting started with Git and GitHub Certificate</li>
+              <li>Introduction to Artificial Intelligence (AI) Certificate</li>
+            </ul>
+          </div>
+          <div class="formation-card grid text-lg md:flex">
             <div class="flex items-center gap-x-4 mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
             </svg>
             <h3 class="text-l font-bold">
@@ -331,21 +388,7 @@
               <li>C#</li>
             </ul>
           </div>
-          <div class="formation-card mb-10 flex mt-9 text-lg">
-            <div class="flex items-center gap-x-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
-              </svg>          
-              <h3 class="text-l font-bold">
-                Coursera
-              </h3>
-              </div>
-            <ul class="list-disc pl-16 marker:text-white space-y-2" >
-              <li>Python for Data Science, AI & Development Certificate</li>
-              <li>Getting started with Git and GitHub Certificate</li>
-              <li>Introduction to Artificial Intelligence (AI) Certificate</li>
-            </ul>
-          </div>
+          
           
         </div>
       </section>
