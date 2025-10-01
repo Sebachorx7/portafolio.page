@@ -18,11 +18,11 @@ menuBtn.addEventListener('click', () => {
 });
 showmorebtn.addEventListener('click', (e)=>{
   text.classList.toggle('show-more');
-  if (showmorebtn.innerText === "Show More") {
-      showmorebtn.innerText = "Show Less";
-    } else {
-      showmorebtn.innerText = "Show More";
-    }
+  // if (showmorebtn.innerText === "Show More") {
+  //     showmorebtn.innerText = "Show Less";
+  //   } else {
+  //     showmorebtn.innerText = "Show More";
+  //   }
 });
 window.onscroll = ()=>{
   header.classList.add('hidden');
