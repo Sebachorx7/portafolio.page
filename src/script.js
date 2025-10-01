@@ -7,6 +7,11 @@ const text = document.querySelector('#readmore-div');
 
 showmorebtn.addEventListener('click', (e)=>{
   text.classList.toggle('show-more');
+  if (showmorebtn.innerText === "Show More") {
+      showmorebtn.innerText = "Show Less";
+    } else {
+      showmorebtn.innerText = "Show More";
+    }
 })
 readmorebtn.addEventListener('click', (e)=>{
   text.classList.toggle('read-more');

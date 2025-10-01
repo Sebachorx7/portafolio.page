@@ -13,7 +13,7 @@
     transition: .2s all linear;
 }
 body{
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background.webp);
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
